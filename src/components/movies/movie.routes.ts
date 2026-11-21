@@ -7,6 +7,7 @@ import {
   deleteMovie,
 } from "./movie.controller";
 import { authMiddleware } from "../../middlewares/auth.middleware";
+import { requireAdmin } from "../../middlewares/role.middleware";
 
 const router = Router();
 
@@ -14,6 +15,6 @@ router.get("/", getMovies);
 router.get("/:id", getMovieById);
 router.post("/", authMiddleware, createMovie);
 router.put("/:id", authMiddleware, updateMovie);
-router.delete("/:id", authMiddleware, deleteMovie);
+router.delete("/:id", authMiddleware, requireAdmin, deleteMovie);
 
 export default router;

@@ -4,6 +4,10 @@ const app = express();
 
 app.use(express.json()); // Middleware para parsear el cuerpo de las solicitudes como JSON
 
+import { logger } from "./middlewares/logger.middleware";
+
+app.use(logger);
+
 app.get("/", (_req, res) => { // Ruta raíz para verificar que la API está funcionando
   res.status(200).json({ message: "API de catálogo de películas" });
 });

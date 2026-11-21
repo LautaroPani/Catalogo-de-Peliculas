@@ -1,0 +1,130 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Ultima prueba",
+    "collectionId": "08456b9a-a86c-4e04-9cc5-d572f9841dab",
+    "dateExported": "2026-11-21T22:45:20.422Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "22939847-d8fb-4527-8cc0-b5cf023326da",
+            "colId": "08456b9a-a86c-4e04-9cc5-d572f9841dab",
+            "containerId": "",
+            "name": "Registro Usuario",
+            "url": "http://localhost:3000/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2026-11-21T21:31:32.993Z",
+            "modified": "2026-11-21T21:31:32.994Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"name\": \"Admin1\",",
+                    "  \"email\": \"admin@gmail.com\",",
+                    "  \"password\": \"123456\"",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "6439e4cb-6158-4db4-986a-b17a51340cd9",
+            "colId": "08456b9a-a86c-4e04-9cc5-d572f9841dab",
+            "containerId": "",
+            "name": "Token admin",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2026-11-21T22:27:11.417Z",
+            "modified": "2026-11-21T22:27:11.417Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"email\": \"admin@gmail.com\",",
+                    "  \"password\": \"123456\"",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "c75cda52-f154-4402-946b-01a903439d2a",
+            "colId": "08456b9a-a86c-4e04-9cc5-d572f9841dab",
+            "containerId": "",
+            "name": "Rechazo, solo para admin",
+            "url": "http://localhost:3000/api/movies/6b01b5838489c7cfd69a9936",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2026-11-21T22:24:32.036Z",
+            "modified": "2026-11-21T22:24:32.046Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"email\": \"Usuario1@gmail.com\",",
+                    "  \"password\": \"123456\"",
+                    "}"
+                ],
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDE3YmJiYzZjZGQ2MGM5ZWU4MDNkYyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzk1Mjk5OTM5LCJleHAiOjE3OTUzMDM1Mzl9.f6Coj4G1r6f7mHI8DsZuX-ipxLe9iEf59kz0r_iqFVQ"
+            }
+        },
+        {
+            "_id": "0d2bb7fb-78a5-4544-976b-e2c6a084bef2",
+            "colId": "08456b9a-a86c-4e04-9cc5-d572f9841dab",
+            "containerId": "",
+            "name": "Token nuevo Admin",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2026-11-21T22:36:36.311Z",
+            "modified": "2026-11-21T22:36:36.319Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"email\": \"admin@gmail.com\",",
+                    "  \"password\": \"123456\"",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "763053c3-29f1-4500-9dc6-7fbc6897dd96",
+            "colId": "08456b9a-a86c-4e04-9cc5-d572f9841dab",
+            "containerId": "",
+            "name": "Eliminar Pelicula",
+            "url": "http://localhost:3000/api/movies/6b01b5838489c7cfd69a9936",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2026-11-21T22:38:42.882Z",
+            "modified": "2026-11-21T22:38:42.882Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"email\": \"Usuario1@gmail.com\",",
+                    "  \"password\": \"123456\"",
+                    "}"
+                ],
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDIxOWRhNWQzZjRkYzFmMzBlZjdmZCIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc5NTMwMDYyNSwiZXhwIjoxNzk1MzA0MjI1fQ.6hC5-SUDRtmobupxk0EHgbI76SE9Dwk85TyQOFst6z8"
+            }
+        }
+    ],
+    "ref": "BQaBEdcdxQkgA9DyNMI1JqC2jplsjsuasvTQo0Ho2d8a84wsgwAhZhg4gB_t3yeo__7W-igpeNbS8sEGjI9vLQ"
+}

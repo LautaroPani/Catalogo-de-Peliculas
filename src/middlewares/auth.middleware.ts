@@ -25,7 +25,8 @@ export const authMiddleware = (req: Request, res: Response, next: NextFunction) 
 
     // Guardamos el id del usuario para usarlo después en los controladores
     res.locals.userId = decoded.id;
-
+    res.locals.role = decoded.role;
+    
     next();
   } catch (error) {
     if (error instanceof jwt.JsonWebTokenError || error instanceof jwt.TokenExpiredError) {

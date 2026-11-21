@@ -29,7 +29,7 @@ export const userService = {
     const user = await userRepository.create({ name, email, password: hashedPassword });
 
     // Nunca devolvemos el password
-    return { id: user._id, name: user.name, email: user.email };
+    return { id: user._id, name: user.name, email: user.email, role: user.role };
   },
 
   login: async (data: { email?: string; password?: string }) => {
@@ -56,8 +56,11 @@ export const userService = {
     }
 
     // En el token va solo el id: nada de password ni datos sensibles
-    const token = jwt.sign({ id: user._id }, secret, { expiresIn: "1h" });
+    const token = jwt.sign({ id: user._id, role: user.role }, secret, { expiresIn: "1h" });
 
-    return { token, user: { id: user._id, name: user.name, email: user.email } };
+    return {
+      token,
+      user: { id: user._id, name: user.name, email: user.email, role: user.role },
+    };
   },
 };

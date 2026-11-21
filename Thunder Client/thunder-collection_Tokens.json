@@ -1,0 +1,207 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Tokens",
+    "collectionId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+    "dateExported": "2026-11-21T22:44:56.574Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "10e1d855-b506-487f-8e6b-9cb28c9bc0e4",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "Sin token",
+            "url": "http://localhost:3000/api/movies",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2026-11-21T13:40:37.824Z",
+            "modified": "2026-11-21T13:40:37.824Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"title\": \"El padrino\",\r",
+                    "  \"director\": \"Francis Ford Coppola\",\r",
+                    "  \"genre\": \"drama\",\r",
+                    "  \"rating\": 10\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "ffa57f16-26cb-4959-b4bc-82e27e01607a",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "Con token falso",
+            "url": "http://localhost:3000/api/movies",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2026-11-21T13:54:21.675Z",
+            "modified": "2026-11-21T13:54:21.678Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "abc123"
+            }
+        },
+        {
+            "_id": "f5477f35-42aa-4041-9119-9f3187eaca1b",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "token válido y datos correctos",
+            "url": "http://localhost:3000/api/movies",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2026-11-21T13:55:22.310Z",
+            "modified": "2026-11-21T13:55:22.310Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"title\": \"El padrino\",",
+                    "  \"director\": \"Francis Ford Coppola\",",
+                    "  \"genre\": \"drama\",",
+                    "  \"rating\": 10",
+                    "}"
+                ],
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDE3YmJiYzZjZGQ2MGM5ZWU4MDNkYyIsImlhdCI6MTc5NTI3MTcxOSwiZXhwIjoxNzk1Mjc1MzE5fQ.ducGW-vAZPixSI9Vba_2fWVDm4tBJxSUSxQliPc0ZR0"
+            }
+        },
+        {
+            "_id": "9acec428-bbb3-4835-b5f5-3516b645e0d9",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "Conseguir Token",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2026-11-21T14:26:05.153Z",
+            "modified": "2026-11-21T14:26:05.161Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"email\": \"Usuario1@gmail.com\",",
+                    "  \"password\": \"123456\"",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "2de8616f-3689-4552-ae97-248d773ae633",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "con token valido y sin token",
+            "url": "http://localhost:3000/api/movies/6b01ac808489c7cfd69a9935",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2026-11-21T14:38:57.151Z",
+            "modified": "2026-11-21T14:38:57.155Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"rating\": 9",
+                    "  ",
+                    "}"
+                ],
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDE3YmJiYzZjZGQ2MGM5ZWU4MDNkYyIsImlhdCI6MTc5NTI3MTcxOSwiZXhwIjoxNzk1Mjc1MzE5fQ.ducGW-vAZPixSI9Vba_2fWVDm4tBJxSUSxQliPc0ZR0"
+            }
+        },
+        {
+            "_id": "0da99710-9f0a-4bc6-be1e-67489173cc8b",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "Sin token",
+            "url": "http://localhost:3000/api/movies/6b01ac808489c7cfd69a9935",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2026-11-21T15:04:37.212Z",
+            "modified": "2026-11-21T15:04:37.217Z",
+            "headers": []
+        },
+        {
+            "_id": "4c7f9672-c251-4265-8431-d61329af3436",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "Con token ",
+            "url": "http://localhost:3000/api/movies/6b01ac808489c7cfd69a9935",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2026-11-21T15:07:26.749Z",
+            "modified": "2026-11-21T15:07:26.749Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDE3YmJiYzZjZGQ2MGM5ZWU4MDNkYyIsImlhdCI6MTc5NTI3MTcxOSwiZXhwIjoxNzk1Mjc1MzE5fQ.ducGW-vAZPixSI9Vba_2fWVDm4tBJxSUSxQliPc0ZR0"
+            }
+        },
+        {
+            "_id": "248814d3-16ca-4a3d-a527-a7a2010beda1",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "Sin token GET",
+            "url": "http://localhost:3000/api/movies",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2026-11-21T15:08:39.415Z",
+            "modified": "2026-11-21T15:08:39.415Z",
+            "headers": []
+        },
+        {
+            "_id": "186af895-8970-4a6c-a82f-b9a2e3d90fae",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "New Pelicula",
+            "url": "http://localhost:3000/api/movies",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2026-11-21T15:09:32.189Z",
+            "modified": "2026-11-21T15:09:32.189Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"title\": \"Interestelar\",\r",
+                    "  \"director\": \"Christopher Nolan\",\r",
+                    "  \"genre\": \"ciencia ficción\",\r",
+                    "  \"rating\": 9\r",
+                    "}"
+                ],
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZiMDE3YmJiYzZjZGQ2MGM5ZWU4MDNkYyIsImlhdCI6MTc5NTI3MTcxOSwiZXhwIjoxNzk1Mjc1MzE5fQ.ducGW-vAZPixSI9Vba_2fWVDm4tBJxSUSxQliPc0ZR0"
+            }
+        },
+        {
+            "_id": "0b2e01b4-ad43-4aba-9efc-f5485306a794",
+            "colId": "9578edff-0e0e-48ec-9f8d-dfd5e5c570a7",
+            "containerId": "",
+            "name": "Sin token con ID GET",
+            "url": "http://localhost:3000/api/movies/6b01b5838489c7cfd69a9936",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2026-11-21T15:16:06.796Z",
+            "modified": "2026-11-21T15:16:06.800Z",
+            "headers": []
+        }
+    ],
+    "ref": "ceKxjZOmNFJxHxM7oWyBC7M_GZKbyRDVu-7rcn3IwZLwzZYszAif48poSvw34fOhhvLHIh1XTCP7xo-XmfPJsQ"
+}
