@@ -3,14 +3,7 @@
 import { Request, Response } from "express";
 import { AppError } from "../../utils/AppError";
 import { movieService } from "./movie.service";
-
-const handleError = (error: unknown, res: Response) => {
-  if (error instanceof AppError) {
-    return res.status(error.statusCode).json({ message: error.message });
-  }
-  console.error(error);
-  return res.status(500).json({ message: "Error interno del servidor" });
-};
+import { handleError } from "../../utils/handleError";
 
 export const getMovies = async (_req: Request, res: Response) => {
   try {

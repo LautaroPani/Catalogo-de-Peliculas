@@ -1,0 +1,23 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Prueba API Catalogo Peliculas",
+    "collectionId": "383bebb2-6a54-422d-8098-004422626937",
+    "dateExported": "2026-11-21T13:39:11.775Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "051d0b76-752c-493b-b347-036860bbff96",
+            "colId": "383bebb2-6a54-422d-8098-004422626937",
+            "containerId": "",
+            "name": "Test",
+            "url": "http://localhost:3000/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2026-11-21T03:40:58.377Z",
+            "modified": "2026-11-21T03:40:58.378Z",
+            "headers": []
+        }
+    ],
+    "ref": "_GblKXCjZQdJhdwWzCgu9GdL47NZ--Oq7yc05wecCCNK1CRSoKrmIqAWLoIRnnXfs0U2lMeJ1YVPVM-mvMd8Mg"
+}

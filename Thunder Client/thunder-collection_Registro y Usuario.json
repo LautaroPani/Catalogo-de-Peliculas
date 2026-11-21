@@ -1,0 +1,168 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Registro y Usuario",
+    "collectionId": "4cc7bc2d-6024-4867-87ed-932fdde1fce5",
+    "dateExported": "2026-11-21T13:40:01.962Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5a2d1510-c436-4208-af0c-4505410df074",
+            "colId": "4cc7bc2d-6024-4867-87ed-932fdde1fce5",
+            "containerId": "",
+            "name": "Registro correcto",
+            "url": "http://localhost:3000/api/auth/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2026-11-21T11:07:50.780Z",
+            "modified": "2026-11-21T11:07:50.780Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"name\": \"Usuario1\",\r",
+                    "  \"email\": \"Usuario1@gmail.com\",\r",
+                    "  \"password\": \"123456\"\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "5369d3bf-c5b2-4c6c-aaba-7d46eddf185e",
+            "colId": "4cc7bc2d-6024-4867-87ed-932fdde1fce5",
+            "containerId": "",
+            "name": "Email repetido",
+            "url": "http://localhost:3000/api/auth/register",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2026-11-21T11:09:05.110Z",
+            "modified": "2026-11-21T11:09:05.110Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"name\": \"Usuario1\",\r",
+                    "  \"email\": \"Usuario1@gmail.com\",\r",
+                    "  \"password\": \"123456\"\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "80d46fe0-3422-48d6-9d79-508cd85bf00c",
+            "colId": "4cc7bc2d-6024-4867-87ed-932fdde1fce5",
+            "containerId": "",
+            "name": "Contraseña corta",
+            "url": "http://localhost:3000/api/auth/register",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2026-11-21T11:09:17.112Z",
+            "modified": "2026-11-21T11:09:17.112Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"name\": \"Usuario2\",\r",
+                    "  \"email\": \"Usuario2@gmail.com\",\r",
+                    "  \"password\": \"123\"\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "8b332665-eff7-458c-a9b2-c10138cdbcd3",
+            "colId": "4cc7bc2d-6024-4867-87ed-932fdde1fce5",
+            "containerId": "",
+            "name": "Registro sin email",
+            "url": "http://localhost:3000/api/auth/register",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2026-11-21T11:09:29.251Z",
+            "modified": "2026-11-21T11:09:29.252Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"name\": \"Usuario\",\r",
+                    "  \"password\": \"123123\"\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "52f08395-f39e-4ecb-ae56-fe27f5b83446",
+            "colId": "4cc7bc2d-6024-4867-87ed-932fdde1fce5",
+            "containerId": "",
+            "name": "Login con credenciales correctas",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2026-11-21T11:09:41.615Z",
+            "modified": "2026-11-21T11:09:41.615Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"email\": \"Usuario1@gmail.com\",\r",
+                    "  \"password\": \"123456\"\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "ab3375f8-df15-4f73-9d11-4ffa7f490c14",
+            "colId": "4cc7bc2d-6024-4867-87ed-932fdde1fce5",
+            "containerId": "",
+            "name": "Login con contraseña incorrecta",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2026-11-21T11:09:51.481Z",
+            "modified": "2026-11-21T11:09:51.481Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"email\": \"Usuario1@gmail.com\",\r",
+                    "  \"password\": \"incorrecta\"\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "e1cfd384-58ed-4631-b68b-cab49c0b534f",
+            "colId": "4cc7bc2d-6024-4867-87ed-932fdde1fce5",
+            "containerId": "",
+            "name": "Login con email que no existe (error 401)",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2026-11-21T11:10:05.232Z",
+            "modified": "2026-11-21T11:10:05.232Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"email\": \"noexistente@gmail.com\",\r",
+                    "  \"password\": \"123456\"\r",
+                    "}"
+                ],
+                "form": []
+            }
+        }
+    ],
+    "ref": "cXBmuG28j_KiKAAidoSZA0FbWZJgHL7rrIU1_XJqzjeVcqX4NXlJDwBDwDVCqnlrbrn62eBzPKaZszxt4uo0CQ"
+}

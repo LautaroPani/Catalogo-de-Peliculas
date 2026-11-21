@@ -1,0 +1,153 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Creacion y control ",
+    "collectionId": "b323ac73-75da-4531-8bad-fc56e95373c8",
+    "dateExported": "2026-11-21T13:39:53.620Z",
+    "version": "1.4",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "98b7c6fb-c240-403d-b17d-1089deaac247",
+            "colId": "b323ac73-75da-4531-8bad-fc56e95373c8",
+            "containerId": "",
+            "name": "Crear Pelicula",
+            "url": "http://localhost:3000/api/movies",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2026-11-21T09:58:19.079Z",
+            "modified": "2026-11-21T09:58:19.079Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"title\":\"Alien\",",
+                    "  \"director\":\"Ridley Scott\",",
+                    "  \"genre\":\"terror\",",
+                    "  \"rating\":9",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "5c428cac-6109-457c-ba8c-3578ad983195",
+            "colId": "b323ac73-75da-4531-8bad-fc56e95373c8",
+            "containerId": "",
+            "name": "Pelicula dupicada",
+            "url": "http://localhost:3000/api/movies",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2026-11-21T10:31:05.704Z",
+            "modified": "2026-11-21T10:31:05.706Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{",
+                    "  \"title\":\"Alien\",",
+                    "  \"director\":\"Ridley Scott\",",
+                    "  \"genre\":\"terror\",",
+                    "  \"rating\":9",
+                    "}",
+                    ""
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "1afc2a6f-270a-4715-ba0a-90daf353da3c",
+            "colId": "b323ac73-75da-4531-8bad-fc56e95373c8",
+            "containerId": "",
+            "name": "Puntaje fuera del rango",
+            "url": "http://localhost:3000/api/movies",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2026-11-21T10:31:57.071Z",
+            "modified": "2026-11-21T10:31:57.071Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"title\": \"Blade Runner\",\r",
+                    "  \"director\": \"Ridley Scott\",\r",
+                    "  \"genre\": \"ciencia ficción\",\r",
+                    "  \"rating\": 15\r",
+                    "}"
+                ],
+                "form": []
+            }
+        },
+        {
+            "_id": "bf883d2a-10dc-4cb2-ac98-d93fef67fa78",
+            "colId": "b323ac73-75da-4531-8bad-fc56e95373c8",
+            "containerId": "",
+            "name": "Listar todas",
+            "url": "http://localhost:3000/api/movies",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2026-11-21T10:32:36.674Z",
+            "modified": "2026-11-21T10:32:36.674Z",
+            "headers": []
+        },
+        {
+            "_id": "c80f5100-b974-42ae-8ef6-7495d0cbba03",
+            "colId": "b323ac73-75da-4531-8bad-fc56e95373c8",
+            "containerId": "",
+            "name": "Obtener por ID real",
+            "url": "http://localhost:3000/api/movies/6b0172cab96991ed52d067b0",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2026-11-21T10:33:24.990Z",
+            "modified": "2026-11-21T10:33:24.990Z",
+            "headers": []
+        },
+        {
+            "_id": "7f9bed09-a2a9-470c-818b-6787cdd3c098",
+            "colId": "b323ac73-75da-4531-8bad-fc56e95373c8",
+            "containerId": "",
+            "name": "ID invalido",
+            "url": "http://localhost:3000/api/movies/123",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2026-11-21T10:34:39.811Z",
+            "modified": "2026-11-21T10:34:39.811Z",
+            "headers": []
+        },
+        {
+            "_id": "b8f2bf39-fb43-459f-bf3a-fb2dbac40497",
+            "colId": "b323ac73-75da-4531-8bad-fc56e95373c8",
+            "containerId": "",
+            "name": "ID valido pero inexistente",
+            "url": "http://localhost:3000/api/movies/64b7f0f0f0f0f0f0f0f0f0f0",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2026-11-21T10:35:12.526Z",
+            "modified": "2026-11-21T10:35:12.526Z",
+            "headers": []
+        },
+        {
+            "_id": "583daec3-1371-4a56-bb9d-cab93f7279d4",
+            "colId": "b323ac73-75da-4531-8bad-fc56e95373c8",
+            "containerId": "",
+            "name": "Actualiza y elimina con ID real",
+            "url": "http://localhost:3000/api/movies/6b0172cab96991ed52d067b0",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2026-11-21T10:44:38.806Z",
+            "modified": "2026-11-21T10:44:38.808Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": [
+                    "{\r",
+                    "  \"rating\": 10\r",
+                    "}"
+                ],
+                "form": []
+            }
+        }
+    ],
+    "ref": "mmL0IuZjm9MELVb5Jg-c3_LQ1iOhXuNNKgVcA566TpEPEBwJ-M_gf_Mu4GHwzst9vLuHn5ZdA01_8olBjNGovg"
+}

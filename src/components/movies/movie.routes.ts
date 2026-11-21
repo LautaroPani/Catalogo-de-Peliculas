@@ -6,13 +6,14 @@ import {
   updateMovie,
   deleteMovie,
 } from "./movie.controller";
+import { authMiddleware } from "../../middlewares/auth.middleware";
 
 const router = Router();
 
 router.get("/", getMovies);
 router.get("/:id", getMovieById);
-router.post("/", createMovie);
-router.put("/:id", updateMovie);
-router.delete("/:id", deleteMovie);
+router.post("/", authMiddleware, createMovie);
+router.put("/:id", authMiddleware, updateMovie);
+router.delete("/:id", authMiddleware, deleteMovie);
 
 export default router;
